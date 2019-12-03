@@ -1,0 +1,65 @@
+<ion-content>
+
+  <!-- Image Logo -->
+  <div class="row mt-3">
+    <div class="col d-flex justify-content-center">
+      <img src="../../../assets/img/Logo-Universitas-Borobudur-Original-PNG.png" alt="">
+    </div>
+  </div>
+
+  <div class="container mt-2">
+
+    <div class="row justify-content-center align-items-center">
+
+      <!-- Ion Card -->
+      <ion-card class="shadow col-6 p-0">
+
+        <!-- Ion Card Header -->
+        <ion-card-header color="warning" class="p-3">
+
+          <ion-card-title class="text-white" style="font-size: x-large;">
+            <a style="text-decoration: none;" class="text-white" routerLink="/">
+              <ion-icon class="float-left" name="home"  style="vertical-align: bottom;"></ion-icon>
+            </a>
+            <h3 class="text-center mb-0">Login</h3>
+          </ion-card-title>
+
+
+        </ion-card-header>
+
+        <!-- Ion Card Content -->
+        <ion-card-content class="mt-2">
+
+          <!-- Login Form -->
+          <form>
+            <ion-item>
+              <ion-label position="floating">Username</ion-label>
+              <ion-input type="text" name="username" placeholder="Masukkan NIM atau username" clearInput required>
+              </ion-input>
+            </ion-item>
+
+            <ion-item>
+              <ion-label position="floating">Password</ion-label>
+              <ion-input type="password" name="userpass" clearInput required></ion-input>
+            </ion-item>
+
+            <br>
+
+            <ion-button expand="block" type="submit" color="warning">
+              Login
+            </ion-button>
+          </form>
+
+          <hr>
+
+          <p>Belum punya akun? silahkan daftar <a routerLink="daftar" style="text-decoration: none;" routerLink="/daftar">di mari</a> </p>
+
+        </ion-card-content>
+
+      </ion-card>
+
+    </div>
+
+  </div>
+
+</ion-content>

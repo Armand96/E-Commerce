@@ -1,0 +1,46 @@
+<!-- Top Nav Bar -->
+<ion-header>
+  <ion-toolbar color="warning">
+
+    <div class="row">
+
+      <!-- Title -->
+      <div class="col">
+        <ion-title class="mt-2">
+          Unbor E-Commerce
+        </ion-title>
+      </div>
+
+      <!-- Search Bar -->
+      <div class="col p-0">
+        <ion-searchbar animated color="light" mode="ios" class="py-0"></ion-searchbar>
+      </div>
+
+      <!-- Menu Options -->
+      <div class="col mt-3">
+        <ul class="list-inline mb-1">
+          <li class="list-inline-item mx-4">
+            <ion-icon name="cart" style="font-size: larger;"></ion-icon>
+          </li>
+          <li class="list-inline-item mx-4">
+            <ion-icon name="business" style="font-size: larger;"></ion-icon>
+          </li>
+          <li class="list-inline-item mx-3 mr-5 float-right" style="font-size:larger;">
+            <a routerLink="login" style="text-decoration: none;" class="text-white">Login</a>
+          </li>
+          <li class="list-inline-item mx-3 float-right" style="font-size:larger;">
+            <a routerLink="daftar" style="text-decoration: none;" class="text-white">Daftar</a>
+          </li>
+        </ul>
+      </div>
+      
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<!-- Body Content -->
+<ion-content>
+  <div class="container-fluid mt-5">
+    <ion-router-outlet></ion-router-outlet>
+  </div>
+</ion-content>
