@@ -1,3 +1,4 @@
+import { AllproductsComponent } from './../comp/allproducts/allproducts.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
@@ -6,7 +7,10 @@ import { HomesPage } from './homes.page';
 const routes: Routes = [
   {
     path: '',
-    component: HomesPage
+    component: HomesPage,
+    children: [
+      {path:'', component:AllproductsComponent}
+    ]
   }
 ];
 

@@ -1,3 +1,4 @@
+import { AllproductsComponent } from './../comp/allproducts/allproducts.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
@@ -15,6 +16,6 @@ import { HomesPage } from './homes.page';
     IonicModule,
     HomesPageRoutingModule
   ],
-  declarations: [HomesPage]
+  declarations: [HomesPage, AllproductsComponent]
 })
 export class HomesPageModule {}

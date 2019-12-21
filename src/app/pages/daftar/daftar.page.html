@@ -31,21 +31,21 @@
         <ion-card-content class="mt-2">
 
           <!-- Login Form -->
-          <form>
+          <form [formGroup]="daftarForm" (ngSubmit)="daftarBaru(daftarForm.value)">
             <ion-item>
               <ion-label position="floating">Username</ion-label>
-              <ion-input type="text" name="username" clearInput required>
+              <ion-input type="text" name="username" clearInput formControlName="username" required>
               </ion-input>
             </ion-item>
 
-            <ion-item>
+            <!-- <ion-item>
               <ion-label position="floating">NIM</ion-label>
               <ion-input type="text" name="nim" placeholder="Nomor Induk Mahasiswa" clearInput required></ion-input>
-            </ion-item>
+            </ion-item> -->
 
             <ion-item>
               <ion-label position="floating">Password</ion-label>
-              <ion-input type="password" name="userpass" clearInput required></ion-input>
+              <ion-input type="password" name="password" clearInput formControlName="password" required></ion-input>
             </ion-item>
 
             <br>
